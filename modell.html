@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Mercedes-Benz Modellkínálat</title>
+</head>
+<body id="modell">
+    <header>
+        <h1>Mercedes-Benz Modellkínálat</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="link">Kezdőlap</a></li>
+                <li><a href="modell.html" class="link">Modellkínálat</a></li>
+                <li><a href="szerviz.html" class="link">Szerviz és Karbantartás</a></li>
+                <li><a href="tortenet.html" class="link">Cégünk története</a></li>
+                <li><a href="kapcsolat.html" class="link">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 class="h2">Mercedes-Benz Modellkínálat</h2>
+            <p class="p2">Ismerje meg Mercedes-Benz autóinkat és válassza ki az Önnek megfelelő modellt.</p>
+        </section>
+        <section>
+            <h3 style="text-align: center;" class="h2">Egyes modelljeink:</h3>
+            <ul style="text-align: center;">
+                <ul>
+                    <h4 class="h2">Mercedes-Benz A-osztály</h4>
+                    <p class="p2">A Mercedes-Benz A-osztály egy kompakt autó, ideális városi közlekedéshez.</p>
+                    <div class="container2">
+                        <img src="A_kulso.png" alt="A-osztály külső" title="A-osztály külső" class="image2">
+                        <div class="overlay2">
+                            <br>
+                        </div>
+                      </div>
+                </ul>
+                <ul>
+                    <h4 class="h2">Mercedes-Benz E-osztály</h4>
+                    <p class="p2">A Mercedes-Benz E-osztály elegáns és kifinomult középkategóriás autó.</p>
+                    <div class="container">
+                        <img src="car_1.png" alt="E-osztály külső" title="E-osztály külső" class="image">
+                        <div class="overlay">
+                            <br>
+                        </div>
+                      </div>
+                </ul>
+                <ul>
+                    <h4 class="h2">Mercedes-Benz S-osztály</h4>
+                    <p class="p2">A Mercedes-Benz S-osztály a luxusautók csúcsa, exkluzív és magas teljesítményű.</p>
+                    <div class="container3">
+                        <img src="S_kulso.png" alt="S-osztály külső" title="S-osztály külső" class="image3">
+                        <div class="overlay3">
+                            <br>
+                        </div>
+                      </div>
+                </ul>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p class="p2">&copy; 2023 Mercedes-Benz Autógyár</p>
+    </footer>
+    
+<button onclick="topFunction()" id="myBtn" title="Go to top">Vissz az oldal tetejére</button>
+
+<script>
+    let mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
+</script>
+</body>
+</html>

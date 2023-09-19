@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Mercedes-Benz Szerviz és Karbantartás</title>
+</head>
+<body style="background-color: black;" id="szerviz">
+    <header>
+        <h1>Mercedes-Benz Szerviz és Karbantartás</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="link">Kezdőlap</a></li>
+                <li><a href="modell.html" class="link">Modellkínálat</a></li>
+                <li><a href="szerviz.html" class="link">Szerviz és Karbantartás</a></li>
+                <li><a href="tortenet.html" class="link">Cégünk története</a></li>
+                <li><a href="kapcsolat.html" class="link">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 class="h2">Szerviz és Karbantartás</h2>
+            <p class="p2">Válassza a Mercedes-Benz minőségi szervizszolgáltatásait autójának karbantartásához és javításához.</p>
+        </section>
+        <section>
+            <h3 class="h2">Szolgáltatásaink:</h3>
+            <ul>
+                <li>
+                    <h4 class="h2">Rendszeres karbantartás</h4>
+                    <p class="p2">Tartson autóját optimális állapotban rendszeres szervizeléssel.</p>
+                    <div class="container2">
+                        <img src="rendszer.jpeg" alt="Belső Rendszer" title="Belső Rendszer" class="image2">
+                        <div class="overlay2">
+                            <br>
+                        </div>
+                      </div>
+                </li>
+                <li>
+                    <h4 class="h2">Javítás és alkatrészcsere</h4>
+                    <p class="p2">Eredeti Mercedes-Benz alkatrészekkel és szakértői munkával javítjuk autóját.</p>
+                    <div class="container2">
+                        <img src="merciszerviz-fekrendszer.jpg" alt="Fékrendszer csere" title="Fékrendszer csere" class="image2">
+                        <div class="overlay2">
+                            <br>
+                        </div>
+                      </div>
+                </li>
+                <li>
+                    <h4 class="h2">Diagnosztika</h4>
+                    <p class="p2">Modern diagnosztikai eszközökkel azonosítjuk és javítjuk a hibákat.</p>
+                    <div class="container2">
+                        <img src="diagnosztika.jpg" alt="Diagnosztika" title="Diagnosztika" class="image2">
+                        <div class="overlay2">
+                            <br>
+                        </div>
+                      </div>
+                </li>
+                <li>
+                    <h4 class="h2">Szervizpontok</h4>
+                    <p class="p2">Találjon megfelelő Mercedes-Benz szervizpontot a közelében.</p>
+                    <div class="container2">
+                        <img src="szervizpont.png" alt="Szervizpont" title="Szervizpont" class="image2">
+                        <div class="overlay2">
+                            <br>
+                        </div>
+                      </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p class="p2">&copy; 2023 Mercedes-Benz Autógyár</p>
+    </footer>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Vissz az oldal tetejére</button>
+
+<script>
+    let mybutton = document.getElementById("myBtn");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+    
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
+</script>
+</body>
+</html>
